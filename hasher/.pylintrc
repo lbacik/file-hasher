@@ -1,0 +1,13 @@
+[MASTER]
+
+disable=
+    C0103, # Class / Constant name
+    C0114, # missing-module-docstring
+    R0903, # Too few public methods
+    W0613, # Unused argument
+    W0621, # Redefining name
+    W0622, # Redefining built-in
+
+[BASIC]
+
+no-docstring-rgx=.*
