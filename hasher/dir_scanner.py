@@ -1,7 +1,7 @@
 
 import os
 from pathlib import Path
-from action import Action
+from .action import Action
 
 
 class DirScanner():

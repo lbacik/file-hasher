@@ -3,10 +3,10 @@ Hasher is a module for searching identical files
 """
 
 import logging
-import parse_arguments
-from actions.memory import Memory
-from file_hash_algorithms.md5 import Md5
-from dir_scanner import DirScanner
+from .parse_arguments import *
+from .actions.memory import Memory
+from .file_hash_algorithms.md5 import Md5
+from .dir_scanner import DirScanner
 
 LOG_FORMAT = '%(asctime)-15s %(levelname)s %(message)s'
 

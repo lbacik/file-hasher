@@ -1,7 +1,7 @@
 
 from abc import ABC, abstractmethod
 from logging import Logger
-from file_hash_algorithm import FileHashAlgorithm
+from .file_hash_algorithm import FileHashAlgorithm
 
 
 class Action(ABC):

@@ -1,5 +1,5 @@
 
-from file_hash_algorithm import FileHashAlgorithm
+from ..file_hash_algorithm import FileHashAlgorithm
 import hashlib
 
 

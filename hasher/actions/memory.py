@@ -1,7 +1,7 @@
 
 from os import stat as os_stat
-from action import Action
-from file_hash_algorithm import FileHashAlgorithm
+from ..action import Action
+from ..file_hash_algorithm import FileHashAlgorithm
 from logging import Logger
 
 
