@@ -21,13 +21,12 @@ def action():
 def dir_scanner(action):
     return DirScanner(
         mock.Mock(),
-        '/',
         action
     )
 
 
 def test_scann(prepared_fs, dir_scanner, action):
-    dir_scanner.run()
+    dir_scanner.run('/')
     action.execute.assert_has_calls(
         [
             mock.call('//test.foo'),
@@ -39,7 +38,7 @@ def test_scann(prepared_fs, dir_scanner, action):
 
 def test_scann_recursive(prepared_fs, dir_scanner, action):
     dir_scanner.set_recursive()
-    dir_scanner.run()
+    dir_scanner.run('/')
     action.execute.assert_has_calls(
         [
             mock.call('//test.foo'),
