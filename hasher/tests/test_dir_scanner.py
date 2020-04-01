@@ -1,7 +1,7 @@
 
 from unittest import mock
 import pytest
-from dir_scanner import DirScanner
+from hasher.dir_scanner import DirScanner
 
 
 @pytest.fixture
