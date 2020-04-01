@@ -11,7 +11,16 @@ from dir_scanner import DirScanner
 LOG_FORMAT = '%(asctime)-15s %(levelname)s %(message)s'
 
 
-def main(args: parse_arguments.Arguments, logger: logging.Logger):
+def main():
+    args = parse()
+
+    logging.basicConfig(format=LOG_FORMAT, level=args.loglevel)
+    logger = logging.getLogger('hasher')
+
+    run(args, logger)
+
+
+def run(args: Arguments, logger: logging.Logger):
     logger.debug('Directory to scan: %s' % args.directory)
 
     scanner = instantiate_scanner(logger)
@@ -30,9 +39,4 @@ def instantiate_scanner(logger: logging.Logger):
 
 
 if __name__ == "__main__":
-    args = parse_arguments.parse()
-
-    logging.basicConfig(format=LOG_FORMAT, level=args.loglevel)
-    logger = logging.getLogger('hasher')
-
-    main(args, logger)
+    main()
