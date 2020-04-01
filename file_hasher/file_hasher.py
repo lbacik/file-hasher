@@ -15,7 +15,7 @@ def main():
     args = parse()
 
     logging.basicConfig(format=LOG_FORMAT, level=args.loglevel)
-    logger = logging.getLogger('hasher')
+    logger = logging.getLogger('file_hasher')
 
     run(args, logger)
 

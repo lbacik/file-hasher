@@ -1,6 +1,6 @@
 
 import pytest
-from hasher.actions.memory import Memory
+from ...actions.memory import Memory
 from unittest import mock
 
 

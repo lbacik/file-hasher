@@ -4,4 +4,4 @@ venv
 .eggs
 build
 dist
-hasher.egg-info
+*.egg-info

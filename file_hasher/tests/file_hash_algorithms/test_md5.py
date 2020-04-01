@@ -1,6 +1,6 @@
 
 import pytest
-from hasher.file_hash_algorithms.md5 import Md5
+from ...file_hash_algorithms.md5 import Md5
 
 
 @pytest.fixture()

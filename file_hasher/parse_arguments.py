@@ -11,7 +11,7 @@ class Arguments:
 def parse():
     parser = argparse.ArgumentParser(
         formatter_class = argparse.RawDescriptionHelpFormatter,
-        epilog = '2020 Łukasz Bacik <mail@luka.sh> https://github.com/lbacik/hasher'
+        epilog = '2020 Łukasz Bacik <mail@luka.sh> https://github.com/lbacik/file-hasher'
     )
     parser.add_argument(
         'directory',
