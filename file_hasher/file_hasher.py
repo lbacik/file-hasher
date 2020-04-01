@@ -3,7 +3,7 @@ Hasher is a module for searching identical files
 """
 
 import logging
-from .parse_arguments import *
+from .parse_arguments import Arguments, parse
 from .actions.memory import Memory
 from .file_hash_algorithms.md5 import Md5
 from .dir_scanner import DirScanner
