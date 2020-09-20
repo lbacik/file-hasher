@@ -25,3 +25,15 @@ optional arguments:
     pytest file_hasher/tests
     pylint file_hasher
     
+    
+crate test venv:
+
+    python3 -m venv venv-test
+    source venv-test/bin/activate
+
+build and install package locally:
+    
+    pip install -r dev-requirements.txt
+    pytest src/file_hasher/tests
+    python setup.py sdist bdist_wheel
+    pip install . 
