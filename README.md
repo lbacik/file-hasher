@@ -17,3 +17,11 @@ optional arguments:
 
 2020 Łukasz Bacik <mail@luka.sh> https://github.com/lbacik/hasher
 ```
+
+## development
+
+    pip install -r dev-requirements.txt
+
+    pytest file_hasher/tests
+    pylint file_hasher
+    

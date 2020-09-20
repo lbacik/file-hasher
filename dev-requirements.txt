@@ -1,3 +1,5 @@
 pytest
 pyfakefs
 pylint
+wheel
+twine
