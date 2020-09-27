@@ -1,8 +1,9 @@
+# File Hasher
 
-Hasher - the tool for searching identical files
+The tool for searching identical files
 
 ```bash
-$ hasher -h
+$ file-hasher -h
 usage: hasher [-h] [-r]
               [--loglevel {CRITICAL,ERROR,WARNING,INFO,DEBUG,NOTSET}]
               [directory]
@@ -18,22 +19,15 @@ optional arguments:
 2020 Łukasz Bacik <mail@luka.sh> https://github.com/lbacik/hasher
 ```
 
-## development
+## Installation
+
+Python3 is required!
+
+    pip install file-hasher
+
+## Development
 
     pip install -r dev-requirements.txt
 
-    pytest file_hasher/tests
-    pylint file_hasher
-    
-    
-crate test venv:
-
-    python3 -m venv venv-test
-    source venv-test/bin/activate
-
-build and install package locally:
-    
-    pip install -r dev-requirements.txt
     pytest src/file_hasher/tests
-    python setup.py sdist bdist_wheel
-    pip install . 
+    pylint src/file_hasher
