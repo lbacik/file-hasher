@@ -1,5 +1,7 @@
 # File Hasher
 
+![File Hasher](https://github.com/lbacik/file-hasher/workflows/File%20Hasher/badge.svg?branch=master)
+
 The tool for searching identical files
 
 ```bash
